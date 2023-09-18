@@ -1,0 +1,128 @@
+/* Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+
+/* Container Styles */
+.editor-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Toolbar Styles */
+.toolbar {
+    background-color:rgb(237, 235, 237);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Common Button Styles */
+button, select, input[type="color"] {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* Increase the size of buttons and input fields */
+button, select, input[type="color"] {
+    margin-right: 15px; /* Increase the spacing between elements */
+    padding: 10px 20px; /* Increase the padding to make them larger */
+    font-size: 18px; /* Increase the font size */
+    width: auto; /* Allow buttons to adjust their width based on content */
+    height: auto; /* Allow buttons to adjust their height based on content */
+    border-radius: 5px; /* Increase the border radius for rounded corners */
+}
+
+/* Increase the size of the editor */
+.editor {
+    font-size: 18px; /* Increase the font size */
+    padding: 20px; /* Increase the padding */
+}
+
+/* Button Hover Styles */
+button:hover, select:hover, input[type="color"]:hover {
+    background-color: #05b9c2;
+}
+
+/* Editor Styles */
+.editor {
+    flex: 1;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+/* Text Alignment Buttons Styles */
+.btn-align-left, .btn-align-center, .btn-align-right {
+    background-color:plum;
+    color: #d6e1ed;
+}
+
+/* Active Toolbar Button Styles */
+button.active {
+    background-color: #3600b3;
+}
+
+/* Highlighted Text Styles */
+::selection {
+    background-color: #002fff;
+    color: #000;
+}
+
+/* Undo and Redo Buttons Styles */
+.btn-undo, .btn-redo {
+    background-color:plum;
+    color: #fff;
+}
+
+.btn-undo:hover, .btn-redo:hover {
+    background-color: #0089b3;
+    color: #000;
+}
+
+/* Link and Image Buttons Styles */
+.btn-link, .btn-image {
+    background-color: plum;
+    color: #eeecec;
+}
+
+.btn-link:hover, .btn-image:hover {
+    background-color: #009bb3;
+    color: #000;
+}
+
+/* Save and Load Buttons Styles */
+.btn-save, .btn-load {
+    background-color: #007bff;
+    color: #120101;
+}
+
+.btn-save:hover, .btn-load:hover {
+    background-color: #0056b3;
+}
+
+/* Font Color Input Styles */
+input[type="color"] {
+    padding: 0;
+    border: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}

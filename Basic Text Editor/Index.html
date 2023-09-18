@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="editor-container">
+        <div class="toolbar">
+            <button class="btn-bold" onclick="execCommand('bold')">B</button>
+            <button class="btn-italic" onclick="execCommand('italic')">I</button>
+            <button class="btn-underline" onclick="execCommand('underline')">U</button>
+            <label for="font-size">Font Size:</label>
+            <select id="font-size" onchange="execCommand('fontSize', this.value)">
+                <option value="1">small</option>
+                <option value="2">Normal</option>
+                <option value="3">Large</option>
+                <option value="4">Huge</option>
+            </select>
+            <button class="btn-undo" onclick="execCommand('undo')">Undo</button>
+<button class="btn-redo" onclick="execCommand('redo')">Redo</button>
+<label for="highlight-color">Highlight Color:</label>
+<input type="color" id="highlight-color" onchange="execCommand('hiliteColor', this.value)">
+<input type="file" id="image-upload" accept="image/*">
+<button class="btn-image" onclick="document.getElementById('image-upload').click()">Insert Image</button>
+
+
+            <label for="font-color">Font Color:</label>
+            <input type="color" id="font-color" onchange="execCommand('foreColor', this.value)">
+            <button class="btn-align-left" onclick="execCommand('justifyLeft')">Left</button>
+            <button class="btn-align-center" onclick="execCommand('justifyCenter')">Center</button>
+            <button class="btn-align-right" onclick="execCommand('justifyRight')">Right</button>
+        </div>
+        <div class="editor" contenteditable="true"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
